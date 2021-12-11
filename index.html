@@ -1,0 +1,48 @@
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teamwork project in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello Marcus!</h1>
+        <p>
+        <fieldset>
+            <legend><b>Choose an option</b></legend>
+            <input type="radio" name="val" value="APOD" id="APOD" checked>
+            <label for="APOD">Astronomy Picture of the Day</label>
+            <br>
+            <input type="radio" name="val" value="NEO" id="NEO">
+            <label for="NEO">Near Earth Asteroids of the Day</label>
+            <br><input type="radio" name="val" value="CR" id="CR">
+            <label for="CR">Curiosity Rover <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(publishing is one day behind)</label>
+            <br><input type="radio" name="val" value="EONET" id="EONET">
+            <label for="EONET">Earth Observatory Event Tracker</label>
+            <br>
+            <p><label for="fromDate" id="fromDateLabel">From:</label>
+                <input type="date" id="fromDate"><br>
+                <label for="toDate" id="toDateLabel">To:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="date" id="toDate"><br>
+            </p>
+        </fieldset>
+
+        </p>
+        <p>
+            <button class="button" onclick="getFromNasa()" type="button">Search</button><br>
+        </p>
+    </div>
+    <div id="loader"></div>
+    <div id="invisible" class="invisible">
+        <div id="picture" class="container">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
